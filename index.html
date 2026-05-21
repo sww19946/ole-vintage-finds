@@ -1000,29 +1000,26 @@ footer{
 .car-btn:hover{background:var(--gold);color:var(--board-dark);}
 .car-prev{left:.75rem}
 .car-next{right:.75rem}
-.car-dots{
+.car-counter{
   position:absolute;
-  bottom:.65rem;left:50%;
-  transform:translateX(-50%);
-  display:flex;gap:.45rem;z-index:10;
-}
-.car-dot{
-  width:8px;height:8px;
-  border-radius:50%;
-  background:rgba(224,184,74,.4);
-  border:1px solid rgba(224,184,74,.5);
-  cursor:pointer;
-  transition:background .2s,transform .2s;
-}
-.car-dot.active{
-  background:var(--gold-light);
-  transform:scale(1.3);
+  bottom:.65rem;right:.85rem;
+  font-family:'Special Elite',cursive;
+  font-size:.7rem;
+  letter-spacing:.14em;
+  color:var(--gold-light);
+  background:rgba(14,30,38,.6);
+  padding:.3rem .75rem;
+  border:1px solid rgba(200,148,42,.25);
+  border-radius:2px;
+  z-index:10;
+  pointer-events:none;
 }
 @media(max-width:700px){
   .car-slide img{height:280px}
   .car-btn{width:40px;height:40px;font-size:1.4rem}
 }
 </style>
+<meta name="email-obfuscation" content="off">
 </head>
 <body>
 <!-- NAV -->
@@ -1144,9 +1141,9 @@ footer{
 </div>
 <div>
 <span class="eyebrow">Our Story</span>
-<h2 class="sec-title">More Than<br/>Just Things</h2>
+<h2 class="sec-title">About the Shop</h2>
 <div class="sec-rule"></div>
-<p class="sec-text">At Ole Vintage Finds, we believe the best treasures are the ones that carry history. Every item in our 9,200+ square foot showroom has been carefully chosen for its character, craft, and the quiet stories it holds.</p>
+<p class="sec-text">Ole Vintage Finds is a 9,200+ square foot shop with more than 50 vendors selling antiques, handmade goods, and home décor. Everything is climate-controlled, easy to browse, and priced to sell.</p>
 <blockquote class="about-quote">“Every piece has a story — we’re just helping it find the next chapter.”</blockquote>
 <ul class="flist">
 <li>Over 9,200 sq ft of climate-controlled browsing space</li>
@@ -1217,47 +1214,10 @@ footer{
 <div class="sec-rule"></div>
 <p class="sec-text" style="margin-bottom:2rem">A few shots from around the shop. Stock changes constantly, so there's always something new when you come in.</p>
 <div class="carousel" id="carousel">
-<div class="car-track" id="carTrack">
-<div class="car-slide" data-index="0">
-<img alt="Vintage signs, pedal cars &amp; memorabilia" loading="eager" src="images/gallery-01.jpg"/>
-<div class="car-cap">Vintage signs, pedal cars &amp; memorabilia</div>
-</div>
-<div class="car-slide" data-index="1">
-<img alt="Farmhouse décor &amp; country home accents" loading="lazy" src="images/gallery-02.jpg"/>
-<div class="car-cap">Farmhouse décor &amp; country home accents</div>
-</div>
-<div class="car-slide" data-index="2">
-<img alt="Packed shelves — something on every level" loading="lazy" src="images/gallery-03.jpg"/>
-<div class="car-cap">Packed shelves — something on every level</div>
-</div>
-<div class="car-slide" data-index="3">
-<img alt="Glassware, figurines &amp; collectibles" loading="lazy" src="images/gallery-04.jpg"/>
-<div class="car-cap">Glassware, figurines &amp; collectibles</div>
-</div>
-<div class="car-slide" data-index="4">
-<img alt="Handmade goods &amp; cottage vendor booth" loading="lazy" src="images/gallery-05.jpg"/>
-<div class="car-cap">Handmade goods &amp; cottage vendor booth</div>
-</div>
-<div class="car-slide" data-index="5">
-<img alt="License plates, tools &amp; Americana" loading="lazy" src="images/gallery-06.jpg"/>
-<div class="car-cap">License plates, tools &amp; Americana</div>
-</div>
-<div class="car-slide" data-index="6">
-<img alt="Lamps, furniture &amp; the " booth"="" loading="lazy" she="" shed"="" src="images/gallery-07.jpg"/>
-<div class="car-cap">Lamps, furniture &amp; the "She Shed" booth</div>
-</div>
-<div class="car-slide" data-index="7">
-<img alt="Delaware dairy bottles &amp; local collectibles" loading="lazy" src="images/gallery-08.jpg"/>
-<div class="car-cap">Delaware dairy bottles &amp; local collectibles</div>
-</div>
-<div class="car-slide" data-index="8">
-<img alt="Spring &amp; seasonal home décor" loading="lazy" src="images/gallery-09.jpg"/>
-<div class="car-cap">Spring &amp; seasonal home décor</div>
-</div>
-</div>
+<div class="car-track" id="carTrack"><div class="car-slide" data-index="0"><img alt="Vintage signs, pedal cars &amp; memorabilia" loading="eager" src="images/gallery-01.jpg"/><div class="car-cap">Vintage signs, pedal cars &amp; memorabilia</div></div><div class="car-slide" data-index="1"><img alt="Farmhouse d&eacute;cor &amp; country home accents" loading="lazy" src="images/gallery-02.jpg"/><div class="car-cap">Farmhouse d&eacute;cor &amp; country home accents</div></div><div class="car-slide" data-index="2"><img alt="Packed shelves &mdash; something on every level" loading="lazy" src="images/gallery-03.jpg"/><div class="car-cap">Packed shelves &mdash; something on every level</div></div><div class="car-slide" data-index="3"><img alt="Glassware, figurines &amp; collectibles" loading="lazy" src="images/gallery-04.jpg"/><div class="car-cap">Glassware, figurines &amp; collectibles</div></div><div class="car-slide" data-index="4"><img alt="Handmade goods &amp; cottage vendor booth" loading="lazy" src="images/gallery-05.jpg"/><div class="car-cap">Handmade goods &amp; cottage vendor booth</div></div><div class="car-slide" data-index="5"><img alt="License plates, tools &amp; Americana" loading="lazy" src="images/gallery-06.jpg"/><div class="car-cap">License plates, tools &amp; Americana</div></div><div class="car-slide" data-index="6"><img alt="Lamps, furniture &amp; the She Shed booth" loading="lazy" src="images/gallery-07.jpg"/><div class="car-cap">Lamps, furniture &amp; the She Shed booth</div></div><div class="car-slide" data-index="7"><img alt="Delaware dairy bottles &amp; local collectibles" loading="lazy" src="images/gallery-08.jpg"/><div class="car-cap">Delaware dairy bottles &amp; local collectibles</div></div><div class="car-slide" data-index="8"><img alt="Spring &amp; seasonal home d&eacute;cor" loading="lazy" src="images/gallery-09.jpg"/><div class="car-cap">Spring &amp; seasonal home d&eacute;cor</div></div><div class="car-slide" data-index="9"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-10.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="10"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-11.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="11"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-12.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="12"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-13.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="13"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-14.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="14"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-15.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="15"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-16.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="16"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-17.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="17"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-18.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="18"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-19.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="19"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-20.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="20"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-21.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="21"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-22.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="22"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-23.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="23"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-24.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="24"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-25.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="25"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-26.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="26"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-27.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="27"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-28.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="28"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-29.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="29"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-30.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="30"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-31.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="31"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-32.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="32"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-33.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="33"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-34.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="34"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-35.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="35"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-36.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="36"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-37.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="37"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-38.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="38"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-39.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="39"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-40.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="40"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-41.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="41"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-42.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="42"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-43.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="43"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-44.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="44"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-45.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="45"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-46.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="46"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-47.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="47"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-48.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="48"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-49.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="49"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-50.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="50"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-51.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="51"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-52.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="52"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-53.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="53"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-54.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="54"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-55.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="55"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-56.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="56"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-57.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="57"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-58.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="58"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-59.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="59"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-60.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="60"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-61.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="61"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-62.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="62"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-63.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="63"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-64.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="64"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-65.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="65"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-66.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="66"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-67.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="67"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-68.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="68"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-69.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="69"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-70.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="70"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-71.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="71"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-72.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="72"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-73.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="73"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-74.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="74"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-75.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="75"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-76.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="76"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-77.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="77"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-78.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="78"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-79.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="79"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-80.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div><div class="car-slide" data-index="80"><img alt="Inside Ole Vintage Finds" loading="lazy" src="images/gallery-81.jpg"/><div class="car-cap">Inside Ole Vintage Finds</div></div></div>
 <button aria-label="Previous" class="car-btn car-prev" id="carPrev">‹</button>
 <button aria-label="Next" class="car-btn car-next" id="carNext">›</button>
-<div class="car-dots" id="carDots"></div>
+<div class="car-counter" id="carCounter">1 / 81</div>
 </div>
 <div style="text-align:center;margin-top:2rem">
 <a class="btn" href="https://www.instagram.com/olevintagefinds" rel="noopener" target="_blank">More on Instagram ↗</a>
@@ -1423,7 +1383,7 @@ footer{
 </div>
 <div class="citem">
 <div class="cicon">✉</div>
-<div><span class="clabel">Email</span><p class="cval"><a href="/cdn-cgi/l/email-protection#81eeede4f7e8eff5e0e6e4e7e8efe5f2c1f8e0e9eeeeafe2eeec"><span class="__cf_email__" data-cfemail="f19e9d9487989f8590969497989f9582b18890999e9edf929e9c">[email&#160;protected]</span></a></p></div>
+<div><span class="clabel">Email</span><p class="cval"><a href="#" onclick="this.href='mail'+'to:olevintagefinds'+'@'+'yahoo.com'"><span class="js-email"></span></a></p></div>
 </div>
 <div class="citem">
 <div class="cicon">📷</div>
@@ -1454,7 +1414,7 @@ footer{
 <button class="btn btn-filled" style="text-align:center;margin-top:.5rem;width:100%;border:none;cursor:pointer;font-family:inherit;font-size:inherit" type="submit">Send Message</button>
 <div class="form-success" id="formSuccess">✓  Message sent! We’ll be in touch soon.</div>
 </form>
-<p class="fnote" style="margin-top:.75rem">Or email directly: <a href="/cdn-cgi/l/email-protection#3d5251584b5453495c5a585b5453594e7d445c555252135e5250"><span class="__cf_email__" data-cfemail="36595a53405f5842575153505f585245764f575e59591855595b">[email&#160;protected]</span></a></p>
+<p class="fnote" style="margin-top:.75rem">Or email directly: <a href="#" onclick="this.href='mail'+'to:olevintagefinds'+'@'+'yahoo.com'"><span class="js-email"></span></a></p>
 </div>
 </div>
 </div>
@@ -1480,6 +1440,7 @@ footer{
 </div>
 
 <script>
+(function(){var u='olevintagefinds',d='yahoo.com';document.querySelectorAll('.js-email').forEach(function(el){el.textContent=u+'@'+d;var a=el.closest('a');if(a)a.href='mailto:'+u+'@'+d;});})();
 var hamburger=document.getElementById('hamburger');
 var mobileMenu=document.getElementById('mobileMenu');
 if(hamburger){hamburger.addEventListener('click',function(){hamburger.classList.toggle('open');mobileMenu.classList.toggle('open');});}
@@ -1501,13 +1462,13 @@ if(cForm){cForm.addEventListener('submit',function(e){e.preventDefault();fetch('
 var track=document.getElementById('carTrack');
 if(!track)return;
 var slides=track.querySelectorAll('.car-slide');
-var dotsWrap=document.getElementById('carDots');
+
 var total=slides.length;
 var cur=0;
 var timer=null;
-for(var i=0;i<total;i++){(function(idx){var d=document.createElement('button');d.className='car-dot'+(idx===0?' active':'');d.setAttribute('aria-label','Slide '+(idx+1));d.addEventListener('click',function(){goTo(idx);});dotsWrap.appendChild(d);})(i);}
-function goTo(n){cur=((n%total)+total)%total;track.style.transform='translateX(-'+cur*100+'%)';dotsWrap.querySelectorAll('.car-dot').forEach(function(d,j){d.classList.toggle('active',j===cur);});reset();}
-function reset(){clearInterval(timer);timer=setInterval(function(){goTo(cur+1);},4500);}
+
+function goTo(n){cur=((n%total)+total)%total;track.style.transform='translateX(-'+cur*100+'%)';var ctr=document.getElementById('carCounter');if(ctr)ctr.textContent=(cur+1)+' / '+total;reset();}
+function reset(){clearInterval(timer);timer=setInterval(function(){goTo(cur+1);},3500);}
 var pBtn=document.getElementById('carPrev');
 var nBtn=document.getElementById('carNext');
 if(pBtn)pBtn.addEventListener('click',function(){goTo(cur-1);});
